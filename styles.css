@@ -97,3 +97,22 @@ h1, h2, h3 {
     border: 2px dashed #4CAF50;
     border-radius: 10px;
 }
+/* Confetti Animation */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(500px) rotate(360deg);
+        opacity: 0;
+    }
+}
