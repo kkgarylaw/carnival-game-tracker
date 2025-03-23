@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Game Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carnival Game Tracker</h1>
+        <div id="scanner-container">
+            <h2>Scan Game Booth QR Code</h2>
+            <div id="reader"></div>
+            <button id="scan-button">Start Scanner</button>
+        </div>
+        
+        <div id="booths-container">
+            <h2>Your Progress</h2>
+            <div id="booth-progress">
+                <div class="booth" id="booth-1">Booth 1</div>
+                <div class="booth" id="booth-2">Booth 2</div>
+                <div class="booth" id="booth-3">Booth 3</div>
+                <div class="booth" id="booth-4">Booth 4</div>
+                <div class="booth" id="booth-5">Booth 5</div>
+                <div class="booth" id="booth-6">Booth 6</div>
+            </div>
+        </div>
+        
+        <div id="completion-container" style="display: none;">
+            <h2>Congratulations!</h2>
+            <p>You've completed all game booths!</p>
+            <div id="completion-image"></div>
+            <div id="redemption-info">
+                <h3>Redeem Your Gift</h3>
+                <p>Please go to the prize booth and show this screen to claim your gift!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="script.js"></script>
+</body>
+</html>
